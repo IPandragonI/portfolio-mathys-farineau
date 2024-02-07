@@ -1,0 +1,110 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="box skills">
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="code" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Front-End</h2>
+		<p>Développement web côté client</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="stack" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Back-End</h2>
+		<p>Développement web côté serveur</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="database" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Base de Données</h2>
+		<p>Gestion et manipulation de données</p>
+	</div>
+</section>
+
+<section class="box skills">
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="code" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>PHP</h2>
+		<p>Front-end, Back-end, Symfony</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="java" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Java</h2>
+		<p>Back-end, Spring</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="database" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>MySQL</h2>
+		<p>Base de données relationnelles</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="js" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Javascript</h2>
+		<p>Front-end, ExtJS, VueJS, NodeJS </p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="python" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Python</h2>
+		<p>Backend, algorithmie</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="database" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>PostgreSQL</h2>
+		<p>Base de données relationnelles</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="css" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>CSS</h2>
+		<p>Front-end, Boostrap</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="flutter" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Flutter</h2>
+		<p>Création d'application mobile</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="nosql" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>NoSQL</h2>
+		<p>Base de données non relationnelles</p>
+	</div>
+</section>
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills h2 {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>
